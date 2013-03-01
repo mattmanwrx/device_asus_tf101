@@ -77,3 +77,18 @@ BOARD_CACHE_FILESYSTEM := ext4
 
 # More recovery flags
 TARGET_RECOVERY_PRE_COMMAND := "echo 'boot-recovery' > /dev/block/mmcblk0p3; sync"
+
+##  twrp
+
+DEVICE_RESOLUTION := 1280x800
+
+# this enables proper handling of /data/media on devices that have this folder for storage (most Honeycomb and devices that originally shipped with ICS like Galaxy Nexus)
+RECOVERY_SDCARD_ON_DATA := true
+
+# removes the reboot bootloader button from the reboot menu
+TW_NO_REBOOT_BOOTLOADER := true
+
+TW_INTERNAL_STORAGE_PATH := "/data/media"
+TW_INTERNAL_STORAGE_MOUNT_POINT := "internal data"
+TW_EXTERNAL_STORAGE_PATH := "/sdcard"
+TW_EXTERNAL_STORAGE_MOUNT_POINT := "sdcard"
