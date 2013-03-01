@@ -24,10 +24,10 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/ramdisk/fstab.ventana:root/fstab.ventana
 
 # These are the hardware-specific features
-PRODUCT_COPY_FILES += \
-    frameworks/native/data/etc/tablet_core_hardware.xml:system/etc/permissions/tablet_core_hardware.xml \
-    frameworks/native/data/etc/android.hardware.usb.accessory.xml:system/etc/permissions/android.hardware.usb.accessory.xml \
-    frameworks/native/data/etc/android.hardware.usb.host.xml:system/etc/permissions/android.hardware.usb.host.xml
+#PRODUCT_COPY_FILES += \
+#    frameworks/native/data/etc/tablet_core_hardware.xml:system/etc/permissions/tablet_core_hardware.xml \
+#    frameworks/native/data/etc/android.hardware.usb.accessory.xml:system/etc/permissions/android.hardware.usb.accessory.xml \
+#    frameworks/native/data/etc/android.hardware.usb.host.xml:system/etc/permissions/android.hardware.usb.host.xml
 
 # Build characteristics setting 
 PRODUCT_CHARACTERISTICS := tablet
@@ -37,8 +37,8 @@ PRODUCT_TAGS += dalvik.gc.type-precise
 
 # Extra packages to build for this device
 PRODUCT_PACKAGES += \
-    	librs_jni \
-	com.android.future.usb.accessory \
+#    	librs_jni \
+#	com.android.future.usb.accessory \
 	make_ext4fs \
 	setup_fs \
 	libinvensense_mpl \
@@ -47,9 +47,9 @@ PRODUCT_PACKAGES += \
 
 # Propertys spacific for this device
 PRODUCT_PROPERTY_OVERRIDES := \
-    	wifi.interface=wlan0 \
-    	wifi.supplicant_scan_interval=15 \
-    	ro.opengles.version=131072 \
+	wifi.interface=wlan0 \
+	wifi.supplicant_scan_interval=15 \
+	ro.opengles.version=131072 \
 	persist.sys.usb.config=mtp,adb \
 	dalvik.vm.dexopt-data-only=1 \
         ro.sf.lcd_density=160 \

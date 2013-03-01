@@ -13,13 +13,13 @@
 # limitations under the License.
 
 # Camera
-PRODUCT_PACKAGES := \
-	HoloSpiralWallpaper \
-	LiveWallpapersPicker \
-	VisualizationWallpapers \
+#PRODUCT_PACKAGES := \
+#	HoloSpiralWallpaper \
+#	LiveWallpapersPicker \
+#	VisualizationWallpapers \
 
-PRODUCT_PACKAGES += \
-    	Camera
+#PRODUCT_PACKAGES += \
+#    	Camera
 
 # Inherit full-base
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
