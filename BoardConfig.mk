@@ -55,7 +55,7 @@ BOARD_FLASH_BLOCK_SIZE := 4096
 
 # use custom built kernel
 TARGET_KERNEL_SOURCE := kernel/asus/tf101
-TARGET_KERNEL_CONFIG := lumpy_recoveryconfig
+TARGET_KERNEL_CONFIG := lumpy_defconfig
 
 # Recovery Options
 BOARD_CUSTOM_BOOTIMG_MK := device/asus/tf101/recovery/recovery.mk
